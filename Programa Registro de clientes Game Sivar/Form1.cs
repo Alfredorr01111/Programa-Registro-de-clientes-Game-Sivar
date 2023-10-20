@@ -53,6 +53,8 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             }
         }
     }
+
+    //este metodo encripta la contraseña
     public class PasswordHasher
     {
         public static string HashPassword(string password)
