@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Programa_Registro_de_clientes_Game_Sivar
+namespace Conexion_MySQL
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new Form1());
         }
     }
 }
