@@ -1,7 +1,7 @@
 ﻿
 namespace Programa_Registro_de_clientes_Game_Sivar
 {
-    partial class Form4
+    partial class FormPuntos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,34 @@ namespace Programa_Registro_de_clientes_Game_Sivar
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lblUsuarios = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lblUsuarios
+            // 
+            this.lblUsuarios.AutoSize = true;
+            this.lblUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuarios.Location = new System.Drawing.Point(245, 210);
+            this.lblUsuarios.Name = "lblUsuarios";
+            this.lblUsuarios.Size = new System.Drawing.Size(289, 31);
+            this.lblUsuarios.TabIndex = 1;
+            this.lblUsuarios.Text = "hola, formulario puntos";
+            // 
+            // FormPuntos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form4";
+            this.Controls.Add(this.lblUsuarios);
+            this.Name = "FormPuntos";
+            this.Text = "FormPuntos";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblUsuarios;
     }
 }

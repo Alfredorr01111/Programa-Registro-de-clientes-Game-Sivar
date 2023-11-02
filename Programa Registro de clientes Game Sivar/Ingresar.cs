@@ -26,12 +26,12 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             string user = txtUser.Text;
             string contraseña = txtPassword.Text;
 
-            // Realiza la validación de las credenciales en la base de datos
+
+            // Credenciales válidas, muestra el formulario principal
             bool credencialesValidas = ValidarCredenciales(user, contraseña);
 
             if (credencialesValidas)
-            {
-                // Credenciales válidas, muestra el formulario principal.
+            {                
                 Principal form = new Principal();
                 form.Show();
                 this.Hide();
@@ -68,14 +68,9 @@ namespace Programa_Registro_de_clientes_Game_Sivar
 
                 int count = Convert.ToInt32(cmd.ExecuteScalar());
 
-                return count > 0; // Si count es mayor que 0, las credenciales son válidas.
+                return count > 0; // si count es mayor que 0, las credenciales son válidas.
             }
         }
-
-
-
-
-
 
 
 
@@ -85,7 +80,8 @@ namespace Programa_Registro_de_clientes_Game_Sivar
         {
             Close();
         }
-        //Para mostrar la contraseña
+
+        //Para mostrar la contraseña con la casilla check
         private void chkmostrarPass_CheckedChanged(object sender, EventArgs e)
         {
             if(chkmostrarPass.Checked)

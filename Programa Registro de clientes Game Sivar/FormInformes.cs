@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Programa_Registro_de_clientes_Game_Sivar
 {
-    public partial class Form4 : Form
+    public partial class FormInformes : Form
     {
-        public Form4()
+        public FormInformes()
         {
             InitializeComponent();
         }
