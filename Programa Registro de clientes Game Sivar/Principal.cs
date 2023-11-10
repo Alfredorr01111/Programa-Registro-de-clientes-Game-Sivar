@@ -24,7 +24,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             InitializeComponent();
         }
 
-
+        
         //Configuracion de formularios por menu
         private void AbrirFormulario(IconMenuItem menu, Form formulario)
         {
@@ -58,18 +58,6 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             AbrirFormulario((IconMenuItem)sender, new FormUsuarios());
         }
 
-
-
-        private void submenuRegistrarCliente_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(menuClientes, new FormClientes());
-        }
-
-        private void submenuListaCliente_Click_1(object sender, EventArgs e)
-        {
-            AbrirFormulario(menuTarjetas, new formListaClientes());
-        }
-
         private void menuTarjetas_Click(object sender, EventArgs e)
         {
             AbrirFormulario((IconMenuItem)sender, new FormTarjetas());
@@ -79,18 +67,20 @@ namespace Programa_Registro_de_clientes_Game_Sivar
         {
             AbrirFormulario((IconMenuItem)sender, new FormPuntos());
         }
+         
+        private void menuClientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menuClientes, new FormClientes());
+        }
 
         private void menuInventarios_Click(object sender, EventArgs e)
         {
-            AbrirFormulario((IconMenuItem) sender, new FormInventario());
+            AbrirFormulario(menuClientes, new FormInventario());
         }
 
-        private void submenuHistorial_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(menuInformes, new FormInformes());
-        }
 
     }
+
 
 }
    

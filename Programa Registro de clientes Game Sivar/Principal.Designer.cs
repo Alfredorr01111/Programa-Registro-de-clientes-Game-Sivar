@@ -31,13 +31,10 @@
             this.menu = new System.Windows.Forms.MenuStrip();
             this.menUsuarios = new FontAwesome.Sharp.IconMenuItem();
             this.menuClientes = new FontAwesome.Sharp.IconMenuItem();
-            this.submenuRegistrarCliente = new FontAwesome.Sharp.IconMenuItem();
-            this.submenuListaCliente = new FontAwesome.Sharp.IconMenuItem();
             this.menuTarjetas = new FontAwesome.Sharp.IconMenuItem();
             this.menuPuntos = new FontAwesome.Sharp.IconMenuItem();
             this.menuInventarios = new FontAwesome.Sharp.IconMenuItem();
-            this.menuInformes = new FontAwesome.Sharp.IconMenuItem();
-            this.submenuHistorial = new FontAwesome.Sharp.IconMenuItem();
+            this.menucerrar = new FontAwesome.Sharp.IconMenuItem();
             this.menuTitulo = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
             this.contenedor = new System.Windows.Forms.Panel();
@@ -52,10 +49,10 @@
             this.menuTarjetas,
             this.menuPuntos,
             this.menuInventarios,
-            this.menuInformes});
+            this.menucerrar});
             this.menu.Location = new System.Drawing.Point(0, 55);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(791, 75);
+            this.menu.Size = new System.Drawing.Size(723, 75);
             this.menu.TabIndex = 3;
             this.menu.Text = "menuStrip1";
             // 
@@ -78,9 +75,6 @@
             // menuClientes
             // 
             this.menuClientes.AutoSize = false;
-            this.menuClientes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.submenuRegistrarCliente,
-            this.submenuListaCliente});
             this.menuClientes.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.menuClientes.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuClientes.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
@@ -92,30 +86,7 @@
             this.menuClientes.Size = new System.Drawing.Size(80, 71);
             this.menuClientes.Text = "Clientes";
             this.menuClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // submenuRegistrarCliente
-            // 
-            this.submenuRegistrarCliente.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.submenuRegistrarCliente.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.submenuRegistrarCliente.IconColor = System.Drawing.Color.Black;
-            this.submenuRegistrarCliente.IconSize = 18;
-            this.submenuRegistrarCliente.Name = "submenuRegistrarCliente";
-            this.submenuRegistrarCliente.Rotation = 0D;
-            this.submenuRegistrarCliente.Size = new System.Drawing.Size(181, 22);
-            this.submenuRegistrarCliente.Text = "Registrar Cliente";
-            this.submenuRegistrarCliente.Click += new System.EventHandler(this.submenuRegistrarCliente_Click);
-            // 
-            // submenuListaCliente
-            // 
-            this.submenuListaCliente.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.submenuListaCliente.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.submenuListaCliente.IconColor = System.Drawing.Color.Black;
-            this.submenuListaCliente.IconSize = 16;
-            this.submenuListaCliente.Name = "submenuListaCliente";
-            this.submenuListaCliente.Rotation = 0D;
-            this.submenuListaCliente.Size = new System.Drawing.Size(181, 22);
-            this.submenuListaCliente.Text = "Lista de Clientes";
-            this.submenuListaCliente.Click += new System.EventHandler(this.submenuListaCliente_Click_1);
+            this.menuClientes.Click += new System.EventHandler(this.menuClientes_Click);
             // 
             // menuTarjetas
             // 
@@ -165,34 +136,20 @@
             this.menuInventarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menuInventarios.Click += new System.EventHandler(this.menuInventarios_Click);
             // 
-            // menuInformes
+            // menucerrar
             // 
-            this.menuInformes.AutoSize = false;
-            this.menuInformes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.submenuHistorial});
-            this.menuInformes.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.menuInformes.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuInformes.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
-            this.menuInformes.IconColor = System.Drawing.Color.Black;
-            this.menuInformes.IconSize = 50;
-            this.menuInformes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuInformes.Name = "menuInformes";
-            this.menuInformes.Rotation = 0D;
-            this.menuInformes.Size = new System.Drawing.Size(80, 71);
-            this.menuInformes.Text = "Informes";
-            this.menuInformes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // submenuHistorial
-            // 
-            this.submenuHistorial.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.submenuHistorial.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.submenuHistorial.IconColor = System.Drawing.Color.Black;
-            this.submenuHistorial.IconSize = 16;
-            this.submenuHistorial.Name = "submenuHistorial";
-            this.submenuHistorial.Rotation = 0D;
-            this.submenuHistorial.Size = new System.Drawing.Size(195, 22);
-            this.submenuHistorial.Text = "Historial de Canjes";
-   
+            this.menucerrar.AutoSize = false;
+            this.menucerrar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.menucerrar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menucerrar.IconChar = FontAwesome.Sharp.IconChar.WindowCloseO;
+            this.menucerrar.IconColor = System.Drawing.Color.Black;
+            this.menucerrar.IconSize = 50;
+            this.menucerrar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menucerrar.Name = "menucerrar";
+            this.menucerrar.Rotation = 0D;
+            this.menucerrar.Size = new System.Drawing.Size(122, 71);
+            this.menucerrar.Text = "Cerrar Sesión";
+            this.menucerrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // menuTitulo
             // 
@@ -201,7 +158,7 @@
             this.menuTitulo.Location = new System.Drawing.Point(0, 0);
             this.menuTitulo.Name = "menuTitulo";
             this.menuTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuTitulo.Size = new System.Drawing.Size(791, 55);
+            this.menuTitulo.Size = new System.Drawing.Size(723, 55);
             this.menuTitulo.TabIndex = 4;
             this.menuTitulo.Text = "menuStrip2";
             // 
@@ -222,14 +179,14 @@
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.Location = new System.Drawing.Point(0, 130);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(791, 379);
+            this.contenedor.Size = new System.Drawing.Size(723, 444);
             this.contenedor.TabIndex = 6;
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(791, 509);
+            this.ClientSize = new System.Drawing.Size(723, 574);
             this.Controls.Add(this.contenedor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menu);
@@ -253,12 +210,9 @@
         private FontAwesome.Sharp.IconMenuItem menuTarjetas;
         private FontAwesome.Sharp.IconMenuItem menuInventarios;
         private FontAwesome.Sharp.IconMenuItem menuPuntos;
-        private FontAwesome.Sharp.IconMenuItem menuInformes;
+        private FontAwesome.Sharp.IconMenuItem menucerrar;
         private System.Windows.Forms.MenuStrip menuTitulo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel contenedor;
-        private FontAwesome.Sharp.IconMenuItem submenuRegistrarCliente;
-        private FontAwesome.Sharp.IconMenuItem submenuHistorial;
-        private FontAwesome.Sharp.IconMenuItem submenuListaCliente;
     }
 }

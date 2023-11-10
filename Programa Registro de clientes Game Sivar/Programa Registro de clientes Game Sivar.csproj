@@ -72,12 +72,6 @@
     <Compile Include="FormInventario.Designer.cs">
       <DependentUpon>FormInventario.cs</DependentUpon>
     </Compile>
-    <Compile Include="formListaClientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formListaClientes.Designer.cs">
-      <DependentUpon>formListaClientes.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormPuntos.cs">
       <SubType>Form</SubType>
     </Compile>
