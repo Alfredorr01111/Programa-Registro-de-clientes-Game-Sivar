@@ -62,7 +62,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.btnSalir.BackColor = System.Drawing.Color.White;
             this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
             this.btnSalir.ForeColor = System.Drawing.Color.Purple;
-            this.btnSalir.Location = new System.Drawing.Point(480, 272);
+            this.btnSalir.Location = new System.Drawing.Point(480, 254);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(91, 30);
             this.btnSalir.TabIndex = 30;
