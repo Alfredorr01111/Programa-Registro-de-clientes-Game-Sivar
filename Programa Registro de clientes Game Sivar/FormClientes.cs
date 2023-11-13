@@ -24,7 +24,8 @@ namespace Programa_Registro_de_clientes_Game_Sivar
         {
             InitializeComponent();
         }
-               
+
+        //Muestra la lista de registros 
         private void btnLista_Click(object sender, EventArgs e)
         {
             DataTable tabla = new DataTable();
@@ -44,17 +45,14 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             }
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
+        //Agrega un nuevo registro
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             try
             {
                 conexionBD.Open();
 
+                //Inserta los datos la base de datos
                 using (MySqlCommand consulta = new MySqlCommand("INSERT INTO clientes (Nombre, Apellido, Fecha_nacimiento) VALUES (@nombre, @apellidos, @fechaNacimiento)", conexionBD))
                 {
                     consulta.Parameters.AddWithValue("@nombre", txtNombre.Text);
@@ -64,7 +62,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
                     consulta.ExecuteNonQuery();
                 }
 
-                MessageBox.Show("Agregado Exitosamente!!");
+                MessageBox.Show("Cliente Agregado Exitosamente!");
                 LimpiarCampos();
             }
             catch (MySqlException ex)
@@ -77,6 +75,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             }
         }
 
+        //elimina un registro
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(dgvTabla.CurrentRow.Cells["idClientes"].Value);
@@ -90,7 +89,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
                 adaptadorMySQL.SelectCommand = consulta;
                 DataTable tabla = new DataTable();
                 adaptadorMySQL.Fill(tabla);
-                MessageBox.Show("Elemento eliminado!!");
+                MessageBox.Show("Cliente eliminado!!");
 
                 consulta.CommandText = ("select * from clientes");
                 adaptadorMySQL.Fill(tabla);
@@ -102,6 +101,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             }
         }
 
+        //Metodo para limpiar los campos
         private void LimpiarCampos()
         {
             txtNombre.Clear();
@@ -110,6 +110,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
 
         }
 
+        //Modifica un registro
         private void btnModificar_Click(object sender, EventArgs e)
         {
             if (dgvTabla.SelectedRows.Count > 0)
@@ -119,12 +120,12 @@ namespace Programa_Registro_de_clientes_Game_Sivar
                 MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
                 consulta.Connection = conexionBD;
 
-                // Obtenemos los nuevos datos de los TextBox
+                //se obtienen los nuevos datos de los TextBox
                 string nuevoNombre = txtNombre.Text;
                 string nuevoApellido = txtApellido.Text;
                 string nuevaFecha = txtFecha.Text;
 
-                // Realizamos la actualización en la base de datos
+                //se realiza la actualización en la base de datos
                 consulta.CommandText = $"UPDATE clientes SET Nombre = '{nuevoNombre}', Apellido = '{nuevoApellido}', Fecha_nacimiento = '{nuevaFecha}' WHERE idClientes = {id}";
 
                 try
@@ -133,7 +134,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
                     consulta.ExecuteNonQuery();
                     MessageBox.Show("Cliente actualizado exitosamente!");
 
-                    // Actualizamos la vista con los datos actualizados
+                    //muestra la lista con los datos actualizados
                     consulta.CommandText = "SELECT * FROM clientes";
                     MySqlDataAdapter adaptadorMySQL = new MySqlDataAdapter(consulta);
                     DataTable tabla = new DataTable();
@@ -151,9 +152,10 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             }
             else
             {
-                MessageBox.Show("Por favor, selecciona un cliente para modificar.");
+                MessageBox.Show("Seleccione un cliente para modificar.");
             }
         }
+
     }
     
 }

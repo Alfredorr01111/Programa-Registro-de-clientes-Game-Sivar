@@ -30,7 +30,6 @@ namespace Programa_Registro_de_clientes_Game_Sivar
         private void InitializeComponent()
         {
             this.dgvTabla = new System.Windows.Forms.DataGridView();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.btnLista = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtFechaVencimiento = new System.Windows.Forms.TextBox();
@@ -53,33 +52,20 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.dgvTabla.BackgroundColor = System.Drawing.Color.White;
             this.dgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTabla.GridColor = System.Drawing.Color.Purple;
-            this.dgvTabla.Location = new System.Drawing.Point(12, 196);
+            this.dgvTabla.Location = new System.Drawing.Point(44, 190);
             this.dgvTabla.Name = "dgvTabla";
             this.dgvTabla.ReadOnly = true;
-            this.dgvTabla.Size = new System.Drawing.Size(642, 154);
+            this.dgvTabla.Size = new System.Drawing.Size(543, 180);
             this.dgvTabla.TabIndex = 42;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.White;
-            this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
-            this.btnSalir.ForeColor = System.Drawing.Color.Purple;
-            this.btnSalir.Location = new System.Drawing.Point(561, 146);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(81, 30);
-            this.btnSalir.TabIndex = 41;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnLista
             // 
             this.btnLista.BackColor = System.Drawing.Color.White;
             this.btnLista.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
             this.btnLista.ForeColor = System.Drawing.Color.Purple;
-            this.btnLista.Location = new System.Drawing.Point(448, 146);
+            this.btnLista.Location = new System.Drawing.Point(476, 142);
             this.btnLista.Name = "btnLista";
-            this.btnLista.Size = new System.Drawing.Size(81, 30);
+            this.btnLista.Size = new System.Drawing.Size(111, 30);
             this.btnLista.TabIndex = 39;
             this.btnLista.Text = "Lista";
             this.btnLista.UseVisualStyleBackColor = false;
@@ -90,9 +76,9 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.btnAgregar.BackColor = System.Drawing.Color.White;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
             this.btnAgregar.ForeColor = System.Drawing.Color.Purple;
-            this.btnAgregar.Location = new System.Drawing.Point(321, 148);
+            this.btnAgregar.Location = new System.Drawing.Point(348, 142);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(81, 30);
+            this.btnAgregar.Size = new System.Drawing.Size(111, 30);
             this.btnAgregar.TabIndex = 38;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -101,7 +87,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             // txtFechaVencimiento
             // 
             this.txtFechaVencimiento.Font = new System.Drawing.Font("Century Gothic", 11F);
-            this.txtFechaVencimiento.Location = new System.Drawing.Point(166, 148);
+            this.txtFechaVencimiento.Location = new System.Drawing.Point(185, 142);
             this.txtFechaVencimiento.Name = "txtFechaVencimiento";
             this.txtFechaVencimiento.Size = new System.Drawing.Size(127, 25);
             this.txtFechaVencimiento.TabIndex = 37;
@@ -109,7 +95,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             // txtSaldoActual
             // 
             this.txtSaldoActual.Font = new System.Drawing.Font("Century Gothic", 11F);
-            this.txtSaldoActual.Location = new System.Drawing.Point(448, 98);
+            this.txtSaldoActual.Location = new System.Drawing.Point(460, 92);
             this.txtSaldoActual.Name = "txtSaldoActual";
             this.txtSaldoActual.Size = new System.Drawing.Size(127, 25);
             this.txtSaldoActual.TabIndex = 36;
@@ -117,7 +103,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             // txtLimiteCredito
             // 
             this.txtLimiteCredito.Font = new System.Drawing.Font("Century Gothic", 11F);
-            this.txtLimiteCredito.Location = new System.Drawing.Point(166, 97);
+            this.txtLimiteCredito.Location = new System.Drawing.Point(185, 91);
             this.txtLimiteCredito.Name = "txtLimiteCredito";
             this.txtLimiteCredito.Size = new System.Drawing.Size(127, 25);
             this.txtLimiteCredito.TabIndex = 35;
@@ -127,7 +113,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(22, 148);
+            this.label5.Location = new System.Drawing.Point(41, 142);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(103, 18);
             this.label5.TabIndex = 34;
@@ -138,7 +124,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(327, 101);
+            this.label2.Location = new System.Drawing.Point(339, 95);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 18);
             this.label2.TabIndex = 33;
@@ -149,7 +135,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(22, 98);
+            this.label1.Location = new System.Drawing.Point(41, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 18);
             this.label1.TabIndex = 32;
@@ -162,7 +148,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             "Gold",
             "Silver",
             "Plus"});
-            this.cmbTipoTarjetas.Location = new System.Drawing.Point(448, 44);
+            this.cmbTipoTarjetas.Location = new System.Drawing.Point(460, 38);
             this.cmbTipoTarjetas.Name = "cmbTipoTarjetas";
             this.cmbTipoTarjetas.Size = new System.Drawing.Size(127, 21);
             this.cmbTipoTarjetas.TabIndex = 43;
@@ -172,7 +158,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(327, 44);
+            this.label3.Location = new System.Drawing.Point(339, 38);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 18);
             this.label3.TabIndex = 44;
@@ -181,7 +167,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             // cmbClientes
             // 
             this.cmbClientes.FormattingEnabled = true;
-            this.cmbClientes.Location = new System.Drawing.Point(166, 44);
+            this.cmbClientes.Location = new System.Drawing.Point(185, 38);
             this.cmbClientes.Name = "cmbClientes";
             this.cmbClientes.Size = new System.Drawing.Size(127, 21);
             this.cmbClientes.TabIndex = 46;
@@ -191,7 +177,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(25, 43);
+            this.label4.Location = new System.Drawing.Point(44, 37);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(135, 18);
             this.label4.TabIndex = 47;
@@ -202,13 +188,12 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Purple;
-            this.ClientSize = new System.Drawing.Size(665, 384);
+            this.ClientSize = new System.Drawing.Size(639, 415);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cmbClientes);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbTipoTarjetas);
             this.Controls.Add(this.dgvTabla);
-            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnLista);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtFechaVencimiento);
@@ -228,7 +213,6 @@ namespace Programa_Registro_de_clientes_Game_Sivar
         #endregion
 
         private System.Windows.Forms.DataGridView dgvTabla;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnLista;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtFechaVencimiento;

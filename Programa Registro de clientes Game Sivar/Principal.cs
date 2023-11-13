@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using FontAwesome.Sharp;
+using MySql.Data.MySqlClient;
+
 
 namespace Programa_Registro_de_clientes_Game_Sivar
 {
@@ -18,14 +20,12 @@ namespace Programa_Registro_de_clientes_Game_Sivar
         private static IconMenuItem MenuActivo = null;
         private static Form FormularioActivo = null;
 
-
-        public Principal()
+        public Principal() 
         {
             InitializeComponent();
         }
 
-        
-        //Configuracion de formularios por menu
+        //Configuracion de aspectos del los menus
         private void AbrirFormulario(IconMenuItem menu, Form formulario)
         {
             if (MenuActivo != null)
@@ -39,14 +39,14 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             {
                 FormularioActivo.Close();
             }
-            //Acá se esta configurando
+      
             FormularioActivo = formulario;
             formulario.TopLevel = false;
             formulario.FormBorderStyle = FormBorderStyle.None;
             formulario.Dock = DockStyle.Fill;
             formulario.BackColor = Color.Purple;
 
-            //Acá agregando el formulario al contenedor
+            //Acá se agrega el formulario al contenedor
             contenedor.Controls.Add(formulario);
             formulario.Show();
 
@@ -61,12 +61,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
         private void menuTarjetas_Click(object sender, EventArgs e)
         {
             AbrirFormulario((IconMenuItem)sender, new FormTarjetas());
-        }
-        
-        private void menuPuntos_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario((IconMenuItem)sender, new FormPuntos());
-        }
+        }   
          
         private void menuClientes_Click(object sender, EventArgs e)
         {
@@ -75,10 +70,23 @@ namespace Programa_Registro_de_clientes_Game_Sivar
 
         private void menuInventarios_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(menuClientes, new FormInventario());
+            AbrirFormulario(menuInventarios, new FormInventario());
         }
 
+        private void iconmenuTransaccion_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menuPuntos, new FormPuntos());
+        }
 
+        private void iconmenuCanjear_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menuPuntos, new FormCanjear());
+        }
+
+        private void menucerrar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 
 

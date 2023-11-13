@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.33328.57
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programa Registro de clientes Game Sivar", "Programa Registro de clientes Game Sivar\Programa Registro de clientes Game Sivar.csproj", "{7911DE5E-8977-4C73-AB5F-00DFCF78B4F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaTablas", "CapaTablas\CapaTablas.csproj", "{6397C1B8-B489-402E-9EFC-E21719EDEAA1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conexion_MySQL", "Conexion_MySQL\Conexion_MySQL.csproj", "{0F9986BA-1E51-4B0B-A677-F8F6679D39F0}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{7911DE5E-8977-4C73-AB5F-00DFCF78B4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7911DE5E-8977-4C73-AB5F-00DFCF78B4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7911DE5E-8977-4C73-AB5F-00DFCF78B4F4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6397C1B8-B489-402E-9EFC-E21719EDEAA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6397C1B8-B489-402E-9EFC-E21719EDEAA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6397C1B8-B489-402E-9EFC-E21719EDEAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6397C1B8-B489-402E-9EFC-E21719EDEAA1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0F9986BA-1E51-4B0B-A677-F8F6679D39F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0F9986BA-1E51-4B0B-A677-F8F6679D39F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F9986BA-1E51-4B0B-A677-F8F6679D39F0}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -59,6 +59,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
 
         }
 
+        //Boton lista que muestra los registros que hay
         private void btnLista_Click(object sender, EventArgs e)
         {
             MySqlCommand consulta = new MySqlCommand();
@@ -83,6 +84,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             }
         }
 
+        //Boton eliminar, elimina un registro
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(dgvTabla.CurrentRow.Cells["idusuarios"].Value);
@@ -111,10 +113,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
 
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        //Para limpiar los campos
         private void LimpiarCampos()
         {
             txtUser.Clear();
@@ -122,6 +121,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
 
         }
 
+        //boton modificar un usuario
         private void btnModificar_Click(object sender, EventArgs e)
         {
             if (dgvTabla.SelectedRows.Count > 0)
@@ -131,11 +131,11 @@ namespace Programa_Registro_de_clientes_Game_Sivar
                 MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
                 consulta.Connection = conexionBD;
 
-                // Obtenemos los nuevos datos de los TextBox
+                //aqui se obtinenen los nuevos datos de los TextBox
                 string nuevoNombre = txtUser.Text;
                 string nuevaContraseña = txtPassword.Text;
 
-                // Realizamos la actualización en la base de datos
+                //Se realiza la actualizacion en la base de datos
                 consulta.CommandText = $"UPDATE usuarios_sistema SET nombre_usuario = '{nuevoNombre}', contrasenia_usuario = '{nuevaContraseña}' WHERE idusuarios = {id}";
 
                 try
@@ -144,7 +144,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
                     consulta.ExecuteNonQuery();
                     MessageBox.Show("Usuario actualizado exitosamente!");
 
-                    // Actualizamos la vista con los datos actualizados
+                    //Actualiza la vista con los datos actualizados
                     consulta.CommandText = "SELECT * FROM usuarios_sistema";
                     MySqlDataAdapter adaptadorMySQL = new MySqlDataAdapter(consulta);
                     DataTable tabla = new DataTable();

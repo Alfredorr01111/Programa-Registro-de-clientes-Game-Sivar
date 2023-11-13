@@ -30,7 +30,6 @@ namespace Programa_Registro_de_clientes_Game_Sivar
         private void InitializeComponent()
         {
             this.dgvTabla = new System.Windows.Forms.DataGridView();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnLista = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -49,31 +48,18 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.dgvTabla.BackgroundColor = System.Drawing.Color.White;
             this.dgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTabla.GridColor = System.Drawing.Color.Purple;
-            this.dgvTabla.Location = new System.Drawing.Point(27, 137);
+            this.dgvTabla.Location = new System.Drawing.Point(65, 152);
             this.dgvTabla.Name = "dgvTabla";
             this.dgvTabla.ReadOnly = true;
-            this.dgvTabla.Size = new System.Drawing.Size(430, 183);
+            this.dgvTabla.Size = new System.Drawing.Size(529, 244);
             this.dgvTabla.TabIndex = 42;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.White;
-            this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
-            this.btnSalir.ForeColor = System.Drawing.Color.Purple;
-            this.btnSalir.Location = new System.Drawing.Point(480, 236);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(91, 30);
-            this.btnSalir.TabIndex = 41;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.White;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
             this.btnEliminar.ForeColor = System.Drawing.Color.Purple;
-            this.btnEliminar.Location = new System.Drawing.Point(480, 188);
+            this.btnEliminar.Location = new System.Drawing.Point(503, 94);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(91, 30);
             this.btnEliminar.TabIndex = 40;
@@ -86,7 +72,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.btnLista.BackColor = System.Drawing.Color.White;
             this.btnLista.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
             this.btnLista.ForeColor = System.Drawing.Color.Purple;
-            this.btnLista.Location = new System.Drawing.Point(480, 52);
+            this.btnLista.Location = new System.Drawing.Point(393, 42);
             this.btnLista.Name = "btnLista";
             this.btnLista.Size = new System.Drawing.Size(91, 30);
             this.btnLista.TabIndex = 39;
@@ -99,7 +85,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.btnAgregar.BackColor = System.Drawing.Color.White;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
             this.btnAgregar.ForeColor = System.Drawing.Color.Purple;
-            this.btnAgregar.Location = new System.Drawing.Point(480, 96);
+            this.btnAgregar.Location = new System.Drawing.Point(393, 93);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(91, 30);
             this.btnAgregar.TabIndex = 38;
@@ -110,7 +96,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 11F);
-            this.txtPassword.Location = new System.Drawing.Point(229, 88);
+            this.txtPassword.Location = new System.Drawing.Point(195, 93);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(166, 25);
             this.txtPassword.TabIndex = 37;
@@ -118,7 +104,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             // txtUser
             // 
             this.txtUser.Font = new System.Drawing.Font("Century Gothic", 11F);
-            this.txtUser.Location = new System.Drawing.Point(229, 52);
+            this.txtUser.Location = new System.Drawing.Point(195, 55);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(166, 25);
             this.txtUser.TabIndex = 36;
@@ -128,7 +114,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(109, 89);
+            this.label5.Location = new System.Drawing.Point(75, 94);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 18);
             this.label5.TabIndex = 34;
@@ -139,7 +125,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(109, 56);
+            this.label2.Location = new System.Drawing.Point(75, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 18);
             this.label2.TabIndex = 33;
@@ -150,7 +136,7 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.btnModificar.BackColor = System.Drawing.Color.White;
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
             this.btnModificar.ForeColor = System.Drawing.Color.Purple;
-            this.btnModificar.Location = new System.Drawing.Point(480, 142);
+            this.btnModificar.Location = new System.Drawing.Point(503, 42);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(91, 30);
             this.btnModificar.TabIndex = 43;
@@ -163,10 +149,9 @@ namespace Programa_Registro_de_clientes_Game_Sivar
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Purple;
-            this.ClientSize = new System.Drawing.Size(595, 359);
+            this.ClientSize = new System.Drawing.Size(662, 431);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.dgvTabla);
-            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnLista);
             this.Controls.Add(this.btnAgregar);
@@ -185,7 +170,6 @@ namespace Programa_Registro_de_clientes_Game_Sivar
         #endregion
 
         private System.Windows.Forms.DataGridView dgvTabla;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnLista;
         private System.Windows.Forms.Button btnAgregar;
